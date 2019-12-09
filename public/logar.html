@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Language" content="pt-br">
+	<meta charset="utf-8">
+	<title>Citrag</title>
+    <link href="jquery-ui.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+		
+	<div class="header">
+			<img src="images/citrag4.png" alt="logo" width=200 height=100>
+			<div class="header-right">
+					<form action = "/" method="GET">
+						<button id="button"  type="submit" class = "ui-button">Voltar</button>
+					</form>
+			</div>
+	</div>
+
+<div class="ui-widget">
+	<p>Digite seus dados!</p>
+</div>
+
+<form action = "/login" method="POST">
+    Usuário: <input type="text" name="usuario" ><br></br>
+    Senha: <input type="password" name="senha" ><br></br>
+    <button id="button1" type="submit" class = "ui-button">Logar</button>
+</form>
+
+
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+
+<script>
+	
+$( "#accordion" ).accordion();
+$( "#button" ).button();
+$( "#button1" ).button();
+
+</script>
+</body>
+</html>

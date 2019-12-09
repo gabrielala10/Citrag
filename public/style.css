@@ -1,0 +1,15 @@
+.button
+{
+  padding: 15px 25px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 2px 2px;
+  color: black;
+  border: 2px solid #555555;
+}
+body{
+
+  font-family: "Trebuchet MS", sans-serif;
+  background: rgb(173, 219, 240);
+  margin: 50px;
+}

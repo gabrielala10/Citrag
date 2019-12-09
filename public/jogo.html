@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="http://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jscolor.js"></script>
+    <script src="desenho_jogo.js"></script>
+    <script src="placar_jogo.js"></script>
+    <script src="chat_jogo.js"></script>
+    
+    <style> 
+    
+ .footer {
+    bottom: 20px;
+    left: 41%;
+    position: absolute;
+    margin-top:-50px;
+    margin-left:-50px;
+  }
+  .pontos{
+    bottom: 18%;
+    left: 70%;
+    position:absolute;
+  }
+    </style> 
+
+  </head>
+  <body>
+    <form action = "/sairdojogo">
+        <button class="button" style="float: right">Voltar</button>
+    </form>
+
+    <button class="button" onclick="aumentarFonte();">+</button>
+    <button class="button" onclick="diminuirFonte();">-</button>
+    <button class="button" onclick="novo();">Novo</button>
+    <input class="jscolor button" onchange="alterarCorFonte(this.jscolor)" value="000000">
+
+
+    <div class="footer">
+      <textarea id="chat" cols='40' rows='4'></textarea><br>
+      <input type="text" id="msg" style=" top: 30px">
+      <button onclick="send();">Enviar</button>
+    </div>
+
+    <div class= "pontos">
+    <textarea id="pontos" cols='25' rows='30'></textarea>
+    </div>
+  
+    
+
+  </body>
+</html>

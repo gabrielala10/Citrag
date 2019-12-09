@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Language" content="pt-br">
+	<meta charset="utf-8">
+	<title>Citrag</title>
+    <link href="jquery-ui.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+		
+	<div class="header">
+			<img src="images/citrag4.png" alt="logo" width=200 height=100>
+			<div class="header-right">
+					<form action = "/logar">
+						<button id="button_logar"  type="submit" class = "ui-button">Logar</button>
+					</form>
+					<form action = "/cadastrar">
+						<button id="button_cadastrar"  type="submit" class = "ui-button">Cadastrar</button>
+					</form>
+			</div>
+	</div>
+
+<div class="ui-widget">
+	<p>Desenhe com seus amigos !!!</p>
+</div>
+
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+
+<script>
+
+$( "#button_logar" ).button();
+$( "#button_cadastrar" ).button();
+
+</script>
+</body>
+</html>
